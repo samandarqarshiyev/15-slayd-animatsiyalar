@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes samandar{
+            from {background-color: rgb(0, 0, 255);}          /* oldin */
+            to {background-color: rgb(255, 0, 0);}         /* keyin */
+        }
+        div{
+            width: 300px;
+            position: relative;
+            height: 300px;
+
+            background-color: #000000;            /*  animatsiya tugagandan keyin chiqadigan rang (agar cheksiz davom etmasa)  */
+
+            animation-name: samandar; /* animation-name  animatsiya ismi (to'g'ri bog'lanishi uchun keyframes bilan bir xil bo'lishi kerak) */
+
+            animation-duration: 5s;                    /* animation-duration       animatsiya vaqti */
+
+            animation-delay: 5s;            /* animation-delay    qancha vaqtdan keyin boshlanishi */
+
+            animation-iteration-count: 2;                /* animation-iteration-count   animatsiyalar soni */
+
+            animation-direction: alternate;               /* animation-direction   animatsiya xususiyatlari */
+        }
+        /* reverse   teskari */
+        /* aalternate   animatsiyani ulab ketish */
+
+        #div1 {animation-timing-function: linear;}            /* linear   animatsiya boshidan oxirigacha bir xil tezlikda */
+        #div2 {animation-timing-function: ease;}             /* ease   sekin boshlab - keyin tez - keyin yana sekin tugatish */
+        #div3 {animation-timing-function: ease-in;}             /* ease-in  sekin boshlash */
+        #div4 {animation-timing-function: ease-out;}             /* ease-out   sekin tugatish */
+        #div5 {animation-timing-function: ease-in-out;}                                 /* ease-in-out   boshi va oxiri sekin */
+        
+                       /* animation-timing-function    animatsiya funksiyalari */
+    </style>
+</head>
+<body>
+    <div>  </div>
+    
+</body>
+</html>
